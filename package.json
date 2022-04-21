@@ -1,0 +1,23 @@
+{
+  "name": "saucedemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js --require cucumber.js --require step-definitions/**/*.js -f json:cucumber_report.json --publish-quiet"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cucumber/cucumber": "^8.0.0",
+    "chai-visible": "^0.1.5",
+    "cucumber-html-reporter": "^5.5.0",
+    "playwright": "^1.21.0",
+    "prettier": "^2.6.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.21.0",
+    "chai": "^4.3.6"
+  }
+}

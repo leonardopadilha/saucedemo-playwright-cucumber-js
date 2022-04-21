@@ -1,0 +1,466 @@
+[
+  {
+    "description": "    Como usuário\n    Quero adicionar produtos ao carrinho\n    Para visualizar o valor total das compras",
+    "elements": [
+      {
+        "description": "",
+        "id": "carrinho-de-compras;produtos-adicionados-ao-carrinho-com-sucesso",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Produtos adicionados ao carrinho com sucesso",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 665896000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "que esteja logado no sistema",
+            "match": {
+              "location": "step-definitions\\add-product-to-cart.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1373099900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "adiciono 1 produto ao carrinho",
+            "match": {
+              "location": "step-definitions\\add-product-to-cart.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 131939099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "o sistema informa que 1 produto foi adicionado com sucesso",
+            "match": {
+              "location": "step-definitions\\add-product-to-cart.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 306855000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 286114099
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "carrinho-de-compras",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Carrinho de compras",
+    "tags": [],
+    "uri": "features\\add-to-cart.feature"
+  },
+  {
+    "description": "    Como usuário\n    Quero informar dados errados no login\n    Para validar mensagem de errados",
+    "elements": [
+      {
+        "description": "",
+        "id": "informar-dados-errados-no-login;realizar-login-com-dados-inválidos",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Realizar login com dados inválidos",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2042540500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "que acesso a tela para realizar login",
+            "match": {
+              "location": "step-definitions\\login-error.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 455259299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "informo dados inválidos",
+            "match": {
+              "location": "step-definitions\\login-error.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 255354300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "o sistema retorna mensagem de erro",
+            "match": {
+              "location": "step-definitions\\login-error.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16538200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 153491600
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "informar-dados-errados-no-login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Informar dados errados no login",
+    "tags": [],
+    "uri": "features\\login-error.feature"
+  },
+  {
+    "description": "    Como usuário\n    Quero realizar login\n    Para efetuar as compras com sucesso",
+    "elements": [
+      {
+        "description": "",
+        "id": "realizar-login-com-vários-usuários;realizar-login-com-varios-usuarios",
+        "keyword": "Scenario Outline",
+        "line": 7,
+        "name": "Realizar login com varios usuarios",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 716064599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "que acesso a página de login",
+            "match": {
+              "location": "step-definitions\\login-outline.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 487945399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "informo no campo \"problem_user\" e \"secret_sauce\"",
+            "match": {
+              "location": "step-definitions\\login-outline.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 382407699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "acesso a página de produtos com sucesso",
+            "match": {
+              "location": "step-definitions\\login-outline.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57663199
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 109950100
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "realizar-login-com-vários-usuários;realizar-login-com-varios-usuarios",
+        "keyword": "Scenario Outline",
+        "line": 7,
+        "name": "Realizar login com varios usuarios",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 619083500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "que acesso a página de login",
+            "match": {
+              "location": "step-definitions\\login-outline.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 516239798.99999994
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "informo no campo \"standard_user\" e \"secret_sauce\"",
+            "match": {
+              "location": "step-definitions\\login-outline.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 380375400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "acesso a página de produtos com sucesso",
+            "match": {
+              "location": "step-definitions\\login-outline.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 59942600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 218353999
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "realizar-login-com-vários-usuários",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Realizar Login com vários usuários",
+    "tags": [],
+    "uri": "features\\login-outline.feature"
+  },
+  {
+    "description": "    Como usuário\n    Quero realizar login\n    Para efetuar as compras com sucesso",
+    "elements": [
+      {
+        "description": "",
+        "id": "realizar-login;login-com-credenciais-válidas",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Login com credenciais válidas",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 588779700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "que acesso o site",
+            "match": {
+              "location": "step-definitions\\login-step.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 489110200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "informo os dados corretos",
+            "match": {
+              "location": "step-definitions\\login-step.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 373562600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "visualizo a página de produtos anunciados",
+            "match": {
+              "location": "step-definitions\\login-step.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 236217100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 202357999
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "realizar-login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Realizar Login",
+    "tags": [],
+    "uri": "features\\login.feature"
+  },
+  {
+    "description": "    Como usuário\n    Quero remover produtos ao carrinho\n    Para não ter dívidas ",
+    "elements": [
+      {
+        "description": "",
+        "id": "limpar-carrinho-de-compras;produtos-removidos-do-carrinho-com-sucesso",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Produtos removidos do carrinho com sucesso",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 647448800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "que esteja logado",
+            "match": {
+              "location": "step-definitions\\remove-product-to-cart.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 791807900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "adiciono 1 produto",
+            "match": {
+              "location": "step-definitions\\remove-product-to-cart.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 484157500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "removo o mesmo produto do carrinho",
+            "match": {
+              "location": "step-definitions\\remove-product-to-cart.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 70001299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "o sistema retira aquele produto do carrinho com sucesso",
+            "match": {
+              "location": "step-definitions\\remove-product-to-cart.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17965600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 92975800
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "limpar-carrinho-de-compras",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Limpar carrinho de compras",
+    "tags": [],
+    "uri": "features\\remove.to-cart.feature"
+  }
+]
