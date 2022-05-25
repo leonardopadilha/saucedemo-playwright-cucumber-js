@@ -12,5 +12,5 @@ When('informo os dados corretos', async function() {
 })
 
 Then('visualizo a página de produtos anunciados', async function() {
-    await loginPage.assertPageProducts()
+    await loginPage.assertPageProducts('Lista de Produtos')
 })
